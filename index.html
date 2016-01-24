@@ -10,17 +10,152 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/section.css">
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="icon" href="favicon.png" type="image/png"/>
+
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="vendor/owl-carousel/owl.transitions.css">
+        <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css">
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <header id="top" class="ss-style-bigtriangle">
+          <img src="img/logo.png" alt="logo" />
+          <div class="title-box">
+            <svg version="1.1" id="svg-title" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 width="1092.282px" height="178.846px" viewBox="0 0 1092.282 178.846" enable-background="new 0 0 1092.282 178.846"
+            	 xml:space="preserve">
+            <text transform="matrix(0.8844 0 0 1 30.5708 147.377)" fill="#EDEDED" font-family="'Maven Pro'" font-weight="700" font-size="164.3335">VIII</text>
+            <text transform="matrix(1 0 0 1 286.4964 81.9899)" fill="#EDEDED" font-family="'Maven Pro'" font-size="62">SEMANA DA COMPUTAÇÃO</text>
+            <text transform="matrix(1 0 0 1 286.4964 147.3769)" fill="#EDEDED" font-family="'Maven Pro'" font-weight="900" font-size="62">E TECNOLOGIA</text>
+            </svg>
+          </div>
+          <!-- <svg id="header-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+            <path d="M 0 0 L 50 100 L 100 0 Z"/>
+          </svg> -->
+          <svg id="header-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M 0 0 L 50 100 L 100 0 L 100 100 L 0 100 Z" />
+          </svg>
+        </header>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <section id="info" class="after-triangle ss-style-foldedcorner">
+          <h3 class="title">Sobre o Evento</h3>
+          <div id="text">
+            <p>A SeCoT 2016 é a 8ª edição da Semana de Computação e Tecnologia da Universidade Federal de São Carlos - campus Sorocaba.</p>
+            <p>Criada em 2009, a SeCoT é um evento organizado e promovido anualmente pelos alunos do curso com o apoio de docentes da área e considerada um dos maiores eventos acadêmicos sobre tecnologia da região.</p>
+            <p>A SeCoT é um evento que conta com diversas palestras com o objetivo de apresentar e debater temas relacionados à Computação, bem como suas aplicações em diversas áreas com ênfase em novas tecnologias e tendências do mercado.</p>
+            <p>Sempre tentando trazer o melhor na área de tecnologia e suas diversas áreas, a Semana é aberta para toda a comunidade de Sorocaba, contribuindo para consolidar a cidade como uma região atrativa para captação de programadores e instalação de empresas de tecnologia.</p>
+          </div>
+        </section>
+
+        <section id="gallery">
+          <h3 class="title light">O que aconteceu em 2015...</h3>
+
+          <div class="slide-table">
+            <div id="gallery-prev" class="gallery-controls">
+              <svg version="1.1" id="gallery-prev-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="0 0 44.238 44.238" style="enable-background:new 0 0 44.238 44.238;"
+              	 xml:space="preserve">
+                <g>
+                	<g>
+                		<path d="M22.119,44.237C9.922,44.237,0,34.315,0,22.119S9.922,0.001,22.119,0.001s22.119,9.922,22.119,22.118
+                			S34.314,44.237,22.119,44.237z M22.119,1.501C10.75,1.501,1.5,10.75,1.5,22.119c0,11.368,9.25,20.618,20.619,20.618
+                			s20.619-9.25,20.619-20.618C42.738,10.75,33.488,1.501,22.119,1.501z"/>
+                		<path d="M24.667,29.884c-0.192,0-0.384-0.072-0.53-0.22l-7.328-7.334c-0.292-0.293-0.292-0.768,0-1.061l7.328-7.333
+                			c0.293-0.293,0.768-0.293,1.061,0s0.293,0.768,0,1.061L18.4,21.8l6.798,6.805c0.292,0.293,0.292,0.769,0,1.061
+                			C25.051,29.812,24.859,29.884,24.667,29.884z"/>
+                	</g>
+                </g>
+              </svg>
+            </div>
+
+            <div id="owl-gallery" class="owl-carousel">
+              <div class="item">
+                <img src="img/g1.jpg" alt="g1" />
+              </div>
+              <div class="item">
+                <img src="img/g2.jpg" alt="g2" />
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g3.jpg" alt="g3">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g4.jpg" alt="g4">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g5.jpg" alt="g5">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g6.jpg" alt="g6">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g7.jpg" alt="g7">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g8.jpg" alt="g8">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g9.jpg" alt="g9">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g10.jpg" alt="g10">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g11.jpg" alt="g11">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g12.jpg" alt="g12">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g13.jpg" alt="g13">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g14.jpg" alt="g14">
+              </div>
+              <div class="item">
+                <img class="lazyOwl" data-src="img/g15.jpg" alt="g15">
+              </div>
+            </div>
+
+            <div id="gallery-next" class="gallery-controls">
+              <svg version="1.1" id="gallery-next-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                	 viewBox="0 0 44.236 44.236" style="enable-background:new 0 0 44.236 44.236;"
+                	 xml:space="preserve">
+                <g>
+                	<g>
+                		<path d="M22.118,44.236C9.922,44.236,0,34.314,0,22.118S9.922,0,22.118,0s22.118,9.922,22.118,22.118S34.314,44.236,22.118,44.236
+                			z M22.118,1.5C10.75,1.5,1.5,10.749,1.5,22.118c0,11.368,9.25,20.618,20.618,20.618c11.37,0,20.618-9.25,20.618-20.618
+                			C42.736,10.749,33.488,1.5,22.118,1.5z"/>
+                		<path d="M19.341,29.884c-0.192,0-0.384-0.073-0.53-0.22c-0.293-0.292-0.293-0.768,0-1.061l6.796-6.804l-6.796-6.803
+                			c-0.292-0.293-0.292-0.769,0-1.061c0.293-0.293,0.768-0.293,1.061,0l7.325,7.333c0.293,0.293,0.293,0.768,0,1.061l-7.325,7.333
+                			C19.725,29.811,19.533,29.884,19.341,29.884z"/>
+                	</g>
+                </g>
+              </svg>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </section>
+
+        <section id="contact">
+          <form action="//formspree.io/andrebnf@gmail.com"
+                method="POST">
+              <input type="text" name="name">
+              <input type="email" name="_replyto">
+              <input type="submit" value="Send">
+          </form>
+        </section>
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/plugins.js"></script>
@@ -28,12 +163,30 @@
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            $(document).ready(function() {
+              var owl = $("#owl-gallery");
+
+              owl.owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                lazyLoad: true,
+                singleItem: true,
+                pagination: false
+              });
+
+              $("#gallery-next-btn").click(function(){
+                owl.trigger('owl.next');
+              })
+
+              $("#gallery-prev-btn").click(function(){
+                owl.trigger('owl.prev');
+              })
+            });
+            // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            // e.src='//www.google-analytics.com/analytics.js';
+            // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
     </body>
 </html>
