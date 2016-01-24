@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="vendor/owl-carousel/owl.transitions.css">
         <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css">
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -144,6 +145,63 @@
           </div>
         </section>
 
+        <section id="partners">
+          <h3 class="title">Empresas que já nos apoiaram</h3>
+          <div class="partners-box grid-3">
+            <div class="row">
+      				<div class="column-img-box">
+                <a href="http://www.cesar.org.br/" target="_blank"><img src="./img/companies/cesar.jpg" alt=""></a>
+      				</div>
+      				<div class="column-img-box">
+                <a href="http://www.twitter.com/" target="_blank"><img src="./img/companies/twitter.jpg" alt=""></a>
+      				</div>
+      				<div class="column-img-box">
+                <a href="http://www.fit-tecnologia.org.br/" target="_blank"><img src="./img/companies/fit.jpg" alt=""></a>
+      				</div>
+      			</div>
+      			<div class="row">
+      				<div class="column-img-box">
+      					<a href="http://www.codeminer42.com/" target="_blank"><img src="./img/companies/codeminer42.png" alt=""></a>
+      				</div>
+      				<div class="column-img-box">
+      					<a href="http://www.redbull.com/br/pt" target="_blank"><img src="./img/companies/redbull.jpg" alt=""></a>
+      				</div>
+      				<div class="column-img-box">
+      					<a href="http://www.proex.ufscar.br/" target="_blank"><img src="./img/companies/proexlogo.png" alt=""></a>
+      				</div>
+      			</div>
+      			<div class="row">
+      				<div class="column-img-box">
+      					<a href="https://www.youtube.com/channel/UCzOe8P06UdNCX0CHgRSkJRg" target="_blank"><img src="./img/companies/bitofbits.jpg" alt=""></a>
+      				</div>
+              <div class="column-img-box">
+                <a href="http://www.casadocodigo.com.br/" target="_blank"><img src="./img/companies/casadocodigo.jpg" alt=""></a>
+              </div>
+              <div class="column-img-box">
+                <a href="http://gurusorocaba.com.br/" target="_blank"><img src="./img/companies/guru.png" alt=""></a>
+              </div>
+      			</div>
+            <div class="row">
+      				<div class="column-img-box">
+                <a href="http://novatec.com.br/" target="_blank"><img src="./img/companies/novatec.jpg" alt=""></a>
+      				</div>
+      			</div>
+          </div>
+
+        </section>
+
+        <section id="place">
+          <div class="map-wrap">
+        		<div id="map"></div>
+        		<div class="map-info">
+        			<h4>Núcleo de Educação, Tecnologia e Cultura (ETC) - UFSCar Sorocaba</h4>
+        			<p>Rua Maria Cinto de Biaggi, 130, Santa Rosália</p>
+        			<p>Sorocaba, São Paulo - CEP 18095-410</p>
+        			<p><a href="https://www.google.com.br/maps/place/Instituto+Federal+S%C3%A3o+Paulo/@-23.489312,-47.4444848,17z/data=!4m2!3m1!1s0x0:0xec89384409679343" target="_blank">Link para o mapa</a></p>
+        		</div>
+        	</div>
+        </section>
+
         <section id="contact">
           <form action="//formspree.io/andrebnf@gmail.com" method="POST">
               <input type="text" name="name">
@@ -162,8 +220,34 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgAyPM3Fn9VTdmVwQcDVroHQbnjnWgfuk&sensor=false"></script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
+            var map;
+            google.maps.event.addDomListener(window, 'load', initialize);
+            function initialize()
+            {
+
+                var mapOptions = {
+                    scrollwheel: false,
+                    draggable: false,
+                    disableDefaultUI: true,
+                    center: new google.maps.LatLng(-23.488431, -47.438474),
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.TERRAIN
+                };
+
+                map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(-23.488431, -47.444474),
+                    map: map,
+                    title: '',
+                    icon: './img/map-marker.png'
+                });
+            }
+
             $(document).ready(function() {
               var owl = $("#owl-gallery");
 
