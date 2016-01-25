@@ -141,8 +141,48 @@
                 </g>
               </svg>
             </div>
+            <div class="responsive-controls">
+
+              <div id="gallery-prev-resp" class="gallery-resp-controls">
+                <svg version="1.1" id="gallery-prev-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 44.238 44.238" style="enable-background:new 0 0 44.238 44.238;"
+                   xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M22.119,44.237C9.922,44.237,0,34.315,0,22.119S9.922,0.001,22.119,0.001s22.119,9.922,22.119,22.118
+                        S34.314,44.237,22.119,44.237z M22.119,1.501C10.75,1.501,1.5,10.75,1.5,22.119c0,11.368,9.25,20.618,20.619,20.618
+                        s20.619-9.25,20.619-20.618C42.738,10.75,33.488,1.501,22.119,1.501z"/>
+                      <path d="M24.667,29.884c-0.192,0-0.384-0.072-0.53-0.22l-7.328-7.334c-0.292-0.293-0.292-0.768,0-1.061l7.328-7.333
+                        c0.293-0.293,0.768-0.293,1.061,0s0.293,0.768,0,1.061L18.4,21.8l6.798,6.805c0.292,0.293,0.292,0.769,0,1.061
+                        C25.051,29.812,24.859,29.884,24.667,29.884z"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+
+              <div id="gallery-next-resp" class="gallery-resp-controls">
+                <svg version="1.1" id="gallery-next-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 44.236 44.236" style="enable-background:new 0 0 44.236 44.236;"
+                  	 xml:space="preserve">
+                  <g>
+                  	<g>
+                  		<path d="M22.118,44.236C9.922,44.236,0,34.314,0,22.118S9.922,0,22.118,0s22.118,9.922,22.118,22.118S34.314,44.236,22.118,44.236
+                  			z M22.118,1.5C10.75,1.5,1.5,10.749,1.5,22.118c0,11.368,9.25,20.618,20.618,20.618c11.37,0,20.618-9.25,20.618-20.618
+                  			C42.736,10.749,33.488,1.5,22.118,1.5z"/>
+                  		<path d="M19.341,29.884c-0.192,0-0.384-0.073-0.53-0.22c-0.293-0.292-0.293-0.768,0-1.061l6.796-6.804l-6.796-6.803
+                  			c-0.292-0.293-0.292-0.769,0-1.061c0.293-0.293,0.768-0.293,1.061,0l7.325,7.333c0.293,0.293,0.293,0.768,0,1.061l-7.325,7.333
+                  			C19.725,29.811,19.533,29.884,19.341,29.884z"/>
+                  	</g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
             <div class="clearfix"></div>
           </div>
+          <svg id="gallery-separator" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="70" viewBox="0 0 100 70" preserveAspectRatio="none">
+            <path d="M 0 50 L 0 70 L 100 70 L 100 0 Z" />
+          </svg>
         </section>
 
         <section id="partners">
@@ -200,16 +240,44 @@
         			<p><a href="https://www.google.com.br/maps/place/Instituto+Federal+S%C3%A3o+Paulo/@-23.489312,-47.4444848,17z/data=!4m2!3m1!1s0x0:0xec89384409679343" target="_blank">Link para o mapa</a></p>
         		</div>
         	</div>
+          <svg id="map-separator" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="70" viewBox="0 0 100 70" preserveAspectRatio="none">
+            <path d="M 0 0 L 100 50 L 100 70 L 0 70 Z" />
+          </svg>
         </section>
 
+
         <section id="contact">
-          <form action="//formspree.io/andrebnf@gmail.com" method="POST">
-              <input type="text" name="name">
-              <input type="email" name="_replyto">
-              <textarea name="message" rows="5" placeholder="Mensagem (opicional)"></textarea>
-              <input type="hidden" name="_next" value="http://secot.com.br/thanks.html" />
-              <input type="submit" value="Send">
-          </form>
+          <h3 class="title light">Contato</h3>
+          <h4 class="subtitle light">Tem interesse em contribuir com este evento? Deixe-nos uma mensagem e entreremos em contato.</h4>
+
+          <div class="form-wrap">
+            <div class="logo-large">
+              <img src="img/logo.png" alt="logo large" />
+            </div>
+            <form action="//formspree.io/andrebnf@gmail.com" method="POST">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+
+                <label for="email">Seu e-mail</label>
+                <input type="email" name="_replyto" id="email">
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <input type="hidden" name="_next" value="http://secot.com.br/thanks.html" />
+
+                <div class="btn-wrap">
+                  <input type="submit" value="Enviar" class="form-btn">
+                </div>
+            </form>
+          </div>
+          <div class="clearfix">
+
+          </div>
+        </section>
+
+        <section id="social">
+
         </section>
 
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
@@ -258,11 +326,11 @@
                 pagination: false
               });
 
-              $("#gallery-next-btn").click(function(){
+              $("#gallery-next-btn, #gallery-next-resp").click(function(){
                 owl.trigger('owl.next');
               })
 
-              $("#gallery-prev-btn").click(function(){
+              $("#gallery-prev-btn, #gallery-prev-resp").click(function(){
                 owl.trigger('owl.prev');
               })
             });
