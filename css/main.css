@@ -108,6 +108,7 @@ section#schedule div.card .card-content .events-wrap .event-line .time p {
     text-align: right;
     letter-spacing: -0.01em;
     font-size: .9em;
+    margin: 0;
 }
 section#schedule div.card .card-content .events-wrap {
     float: left;
@@ -132,4 +133,7 @@ section#schedule .event-line .title{
 }
 section#schedule .guest{
 	font-weight:bold;
+}
+section#schedule p{
+	margin:0;
 }
