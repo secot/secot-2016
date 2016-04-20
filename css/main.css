@@ -137,3 +137,9 @@ section#schedule .guest{
 section#schedule p{
 	margin:0;
 }
+#apoio .grid-3 .row .column-img-box{
+	line-height: 80px;
+}
+#apoio .grid-3 .row .column-img-box img {
+    width: 40%;
+}
