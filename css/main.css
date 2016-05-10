@@ -37,12 +37,20 @@
 #guests .guest .description .mini-cv {
     display:none;
 }
-.guest .img-block img {
+.guest .img-block img, .colaborador .img-block img {
     width: 9em;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
+}
+#colaboradores .colaborador {
+	color: #555;
+    width: 32%;
+    display: inline-block;
+    margin-top: 3.4em;
+    text-align: center;
+    font-family: "Raleway",sans-serif;
 }
 
 section#schedule {
