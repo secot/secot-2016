@@ -11,15 +11,30 @@
     text-align: center;
     font-family: "Raleway",sans-serif;
 }
+
+#colaboradores .colaborador {
+	color: #555;
+    width: 32%;
+    display: inline-block;
+    margin-top: 3.4em;
+    text-align: center;
+    font-family: "Raleway",sans-serif;
+}
 @media screen and (max-width: 720px) {
-  #guests .guest {
-  	width: 49%;
-  }
+	#guests .guest {
+		width: 49%;
+	}
+	#colaboradores .colaborador {
+		width: 49%;
+	}
 }
 @media screen and (max-width: 480px) {
-  #guests .guest {
-  	width: 100%;
-  }
+	#guests .guest {
+		width: 100%;
+	}
+	#colaboradores .colaborador {
+		width: 100%;
+	}
 }
 #guests .guest h3 {
     margin: 0;
@@ -43,14 +58,6 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-}
-#colaboradores .colaborador {
-	color: #555;
-    width: 32%;
-    display: inline-block;
-    margin-top: 3.4em;
-    text-align: center;
-    font-family: "Raleway",sans-serif;
 }
 
 section#schedule {
